@@ -1,0 +1,6 @@
+[skill]
+  skill_package = "hall-guide-generator.skill"
+  name = "hall-guide-generator"
+  description = "自动生成政务服务大厅导览系统的静态H5页面和数据配置文件；当用户需要搭建大厅信息展示、窗口导览、二维码扫码导览系统时使用"
+  project_name = "政务大厅技能"
+  project_description = "快速生成政务服务大厅导览系统"

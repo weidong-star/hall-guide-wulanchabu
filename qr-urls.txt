@@ -1,0 +1,27 @@
+============================================================
+政务服务大厅二维码URL列表
+============================================================
+域名: https://hall-guide.vercel.app
+大厅数量: 12
+============================================================
+
+大厅 001: https://hall-guide.vercel.app/hall.html?id=001
+大厅 002: https://hall-guide.vercel.app/hall.html?id=002
+大厅 003: https://hall-guide.vercel.app/hall.html?id=003
+大厅 004: https://hall-guide.vercel.app/hall.html?id=004
+大厅 005: https://hall-guide.vercel.app/hall.html?id=005
+大厅 006: https://hall-guide.vercel.app/hall.html?id=006
+大厅 007: https://hall-guide.vercel.app/hall.html?id=007
+大厅 008: https://hall-guide.vercel.app/hall.html?id=008
+大厅 009: https://hall-guide.vercel.app/hall.html?id=009
+大厅 010: https://hall-guide.vercel.app/hall.html?id=010
+大厅 011: https://hall-guide.vercel.app/hall.html?id=011
+大厅 012: https://hall-guide.vercel.app/hall.html?id=012
+
+============================================================
+使用说明：
+============================================================
+1. 复制每个大厅的URL到草料二维码（https://cli.im）生成二维码
+2. 下载生成的二维码图片
+3. 将二维码贴在对应大厅的入口处
+4. 用户扫码即可查看大厅详细信息

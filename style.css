@@ -1,0 +1,256 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+    background: #f5f5f5;
+    line-height: 1.6;
+    color: #333;
+}
+
+.container {
+    max-width: 750px;
+    margin: 0 auto;
+    background: #fff;
+    min-height: 100vh;
+}
+
+/* 顶部导航 */
+.header {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: #fff;
+    padding: 20px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hall-name {
+    font-size: 20px;
+    font-weight: 600;
+    flex: 1;
+}
+
+.voice-btn {
+    background: rgba(255,255,255,0.2);
+    border: none;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: all 0.3s;
+}
+
+.voice-btn:hover {
+    background: rgba(255,255,255,0.3);
+}
+
+.voice-btn.playing {
+    background: rgba(255,255,255,0.4);
+    animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+}
+
+/* 大厅基本信息 */
+.hall-info {
+    padding: 20px;
+}
+
+.info-card {
+    background: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.hall-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+}
+
+.info-content {
+    padding: 15px;
+}
+
+.info-item {
+    padding: 8px 0;
+    display: flex;
+    align-items: flex-start;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.info-item:last-child {
+    border-bottom: none;
+}
+
+.label {
+    font-weight: 500;
+    min-width: 90px;
+    flex-shrink: 0;
+}
+
+.value {
+    flex: 1;
+    color: #666;
+}
+
+/* 温馨提示 */
+.notice {
+    margin: 15px 20px;
+    background: #fff3e0;
+    border-left: 4px solid #ff9800;
+    border-radius: 4px;
+    padding: 12px 15px;
+}
+
+.notice-content {
+    display: flex;
+    align-items: center;
+}
+
+.notice-icon {
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+.notice-text {
+    flex: 1;
+    color: #e65100;
+    font-size: 14px;
+}
+
+/* 区块标题 */
+.section {
+    margin: 20px;
+}
+
+.section-title {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    padding-left: 10px;
+    border-left: 4px solid #667eea;
+}
+
+/* 窗口列表 */
+.windows-list {
+    display: grid;
+    gap: 12px;
+}
+
+.window-card {
+    background: #f9f9f9;
+    border-radius: 8px;
+    padding: 15px;
+    border-left: 3px solid #667eea;
+}
+
+.window-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.window-name {
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.window-services {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-bottom: 8px;
+}
+
+.service-tag {
+    background: #e3f2fd;
+    color: #1976d2;
+    padding: 4px 10px;
+    border-radius: 12px;
+    font-size: 12px;
+}
+
+.window-desc {
+    color: #666;
+    font-size: 14px;
+}
+
+/* 事项列表 */
+.items-list {
+    display: grid;
+    gap: 12px;
+}
+
+.item-card {
+    background: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 15px;
+}
+
+.item-name {
+    font-weight: 600;
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.item-detail {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
+    margin-bottom: 10px;
+}
+
+.item-detail-row {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+}
+
+.item-detail-label {
+    color: #666;
+    margin-right: 5px;
+    min-width: 50px;
+}
+
+.item-detail-value {
+    color: #333;
+    font-weight: 500;
+}
+
+.item-process {
+    background: #f5f5f5;
+    padding: 10px;
+    border-radius: 4px;
+    font-size: 14px;
+    color: #666;
+}
+
+/* 底部 */
+.footer {
+    text-align: center;
+    padding: 20px;
+    color: #999;
+    font-size: 14px;
+    margin-top: 20px;
+}

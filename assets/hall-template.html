@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>政务服务大厅 - 政务服务大厅导览</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- 顶部导航 -->
+        <header class="header">
+            <div class="header-content">
+                <h1 class="hall-name" id="hallName">政务服务大厅</h1>
+                <button class="voice-btn" id="voiceBtn" title="语音播报">
+                    <span class="icon">🔊</span>
+                </button>
+            </div>
+        </header>
+
+        <!-- 大厅基本信息 -->
+        <section class="hall-info" id="hallInfo">
+            <div class="info-card">
+                <img class="hall-image" id="hallImage" src="" alt="大厅实景" onerror="this.style.display='none'">
+                <div class="info-content">
+                    <div class="info-item">
+                        <span class="label">📍 地址：</span>
+                        <span class="value" id="address">-</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="label">📞 电话：</span>
+                        <span class="value" id="phone">-</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="label">🕐 办公时间：</span>
+                        <span class="value" id="workTime">-</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="label">🏢 入驻单位：</span>
+                        <span class="value" id="units">-</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 温馨提示 -->
+        <section class="notice" id="notice" style="display: none;">
+            <div class="notice-content">
+                <span class="notice-icon">📢</span>
+                <span class="notice-text" id="noticeText"></span>
+            </div>
+        </section>
+
+        <!-- 窗口信息 -->
+        <section class="section">
+            <h2 class="section-title">🪟 办事窗口</h2>
+            <div class="windows-list" id="windowsList">
+                <!-- 窗口列表动态生成 -->
+            </div>
+        </section>
+
+        <!-- 事项清单 -->
+        <section class="section">
+            <h2 class="section-title">📋 办事事项</h2>
+            <div class="items-list" id="itemsList">
+                <!-- 事项列表动态生成 -->
+            </div>
+        </section>
+
+        <!-- 底部 -->
+        <footer class="footer">
+            <p>如有疑问，请咨询大厅服务台</p>
+        </footer>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
